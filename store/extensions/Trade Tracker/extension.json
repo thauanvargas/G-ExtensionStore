@@ -1,0 +1,40 @@
+{
+  "title": "Trade Tracker",
+  "description": "Automates the process to track your profits and losts in trading.\nCurrent extension is integrated with API tsarcade.com\nPlease read the README to understand how it works.",
+  "authors": [
+    {
+      "name": "Erotico",
+      "discord": "thauanvargas"
+    }
+  ],
+  "version": "1.1",
+  "categories": ["Usability", "Trading"],
+  
+  "source": "https://github.com/thauanvargas/arcade-tracker/",
+  "readme": "https://github.com/thauanvargas/arcade-tracker/blob/main/README.md",
+  "releases": "https://github.com/thauanvargas/arcade-tracker/releases",
+  
+  "stable": true,
+  
+  "framework": {
+    "name": "GoEarth",
+    "version": "0.4.0"
+  },
+
+  "language": "Go",
+  "commands": {
+    "default": ["cmd", "/C", "arcade-tracker.exe", "-c", "{cookie}", "-p", "{port}", "-f", "{filename}"],
+    "windows": ["cmd", "/C", "arcade-tracker-win.exe", "-c", "{cookie}", "-p", "{port}", "-f", "{filename}"],
+    "mac": ["chmod", "+x", "arcade-tracker-mac", "&&", "./arcade-tracker-mac", "-c", "{cookie}", "-p", "{port}", "-f", "{filename}"],
+    "linux": ["chmod", "+x", "arcade-tracker-linux", "&&", "./arcade-tracker-linux", "-c", "{cookie}", "-p", "{port}", "-f", "{filename}"]
+  },
+  
+  "compatibility": {
+      "systems": ["Windows", "Mac", "Linux"],
+      "clients": ["Origins"]
+  },
+
+  "submissionDate": "24-10-2024 10:00:00",
+  "updateDate": "24-10-2024 10:00:00",
+  "isOutdated": false
+}
